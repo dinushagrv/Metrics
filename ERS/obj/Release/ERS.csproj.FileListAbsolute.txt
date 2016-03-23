@@ -1,0 +1,5 @@
+C:\Users\dwithanage\documents\visual studio 2010\Projects\ERS\ERS\bin\ERS.dll
+C:\Users\dwithanage\documents\visual studio 2010\Projects\ERS\ERS\bin\ERS.pdb
+C:\Users\dwithanage\documents\visual studio 2010\Projects\ERS\ERS\obj\Release\ERS.dll
+C:\Users\dwithanage\documents\visual studio 2010\Projects\ERS\ERS\obj\Release\ERS.pdb
+C:\Users\dwithanage\documents\visual studio 2010\Projects\ERS\ERS\obj\Release\ERS.csprojResolveAssemblyReference.cache
