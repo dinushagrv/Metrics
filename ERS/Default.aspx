@@ -31,9 +31,5 @@
     add/delete or change any metrics which you do not have responsibility for. There 
     is no security around this application except that it is only visible from 
     inside the GRV network, so be very careful.</p>
-    <p class="MsoNormal">
-        -
-        <span style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">
-        GRV Information Management and Technology Department</span></p>
 <br />
 </asp:Content>

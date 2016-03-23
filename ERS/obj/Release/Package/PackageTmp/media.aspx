@@ -9,7 +9,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h2>
-    Incoming Media&nbsp;&nbsp;&nbsp;&nbsp;
+        <strong>Incoming Media</strong>&nbsp;
 </h2>
 <p>
     <table style="width: 100%;">
@@ -179,7 +179,7 @@
             <td>
                 &nbsp;</td>
             <td style="text-align: right">
-                <asp:Button ID="Button1" runat="server" Text="Clear" />
+                <asp:Button ID="Button1" runat="server" Text="Clear" onclick="Button1_Click" />
             </td>
             <td>
                 <asp:Button ID="btn_submit" runat="server" Text="Submit" 

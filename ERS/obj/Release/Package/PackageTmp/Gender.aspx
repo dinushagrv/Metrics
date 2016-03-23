@@ -8,8 +8,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <h3>
-        <strong>Gender Diversity</strong></h3>
+    <h2>
+        <strong>Gender Diversity</strong></h2>
 <p>
     <table style="width:100%;">
         <tr>

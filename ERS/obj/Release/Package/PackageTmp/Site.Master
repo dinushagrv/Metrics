@@ -45,7 +45,8 @@
     </div>
     <div class="footer">
         
-        <img alt="GRV" class="style1" src="images/grv.png" /></div>
+        <img alt="GRV" class="style1" src="images/grv.png" /><br />
+        GRV Information Management &amp; Technology Dept.</div>
     </form>
 </body>
 </html>

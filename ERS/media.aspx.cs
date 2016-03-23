@@ -54,5 +54,10 @@ namespace ERS
                 del.Attributes.Add("onclick", "return confirm('Are you sure you want to delete this entry?');");
             }
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            clearFields();
+        }
     }
 }
