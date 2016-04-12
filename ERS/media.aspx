@@ -49,7 +49,7 @@
             <td>
                 &nbsp;</td>
             <td>
-                <strong>Twitter</strong></td>
+                &nbsp;</td>
             <td>
                 &nbsp;</td>
         </tr>
@@ -60,22 +60,22 @@
                 <asp:TextBox ID="txt_grv_pv" runat="server" TabIndex="1"></asp:TextBox>
             </td>
             <td>
-                Impressions</td>
+                <strong>Twitter</strong></td>
             <td>
-                <asp:TextBox ID="txt_tw_imp" runat="server" TabIndex="7"></asp:TextBox>
-            </td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td>
-                New users
+                Users
             </td>
             <td>
                 <asp:TextBox ID="txt_grv_new_usr" runat="server" TabIndex="1"></asp:TextBox>
             </td>
             <td>
-                &nbsp;</td>
+                Impressions</td>
             <td>
-                &nbsp;</td>
+                <asp:TextBox ID="txt_tw_imp" runat="server" TabIndex="7"></asp:TextBox>
+            </td>
         </tr>
         <tr>
             <td>
@@ -149,6 +149,7 @@
             <td class="style1">
                 </td>
             <td class="style1">
+                <strong>FastTrack </strong>
                 </td>
             <td class="style1">
                 </td>
@@ -160,16 +161,28 @@
                 <asp:TextBox ID="txt_gc_pv" runat="server" TabIndex="5"></asp:TextBox>
             </td>
             <td>
-                &nbsp;</td>
+                Page Views</td>
             <td>
-                &nbsp;</td>
+                <asp:TextBox ID="txt_ft_pv" runat="server" TabIndex="10"></asp:TextBox>
+            </td>
         </tr>
         <tr>
             <td>
-                New Users</td>
+                Users</td>
             <td>
                 <asp:TextBox ID="txt_gc_n_usr" runat="server" TabIndex="6"></asp:TextBox>
             </td>
+            <td>
+                Users</td>
+            <td>
+                <asp:TextBox ID="txt_ft_usr" runat="server" TabIndex="11"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td style="text-align: right">
+                &nbsp;</td>
             <td>
                 &nbsp;</td>
             <td>
@@ -185,16 +198,6 @@
                 <asp:Button ID="btn_submit" runat="server" Text="Submit" 
                     onclick="btn_submit_Click" />
             </td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
             <td>
                 &nbsp;</td>
         </tr>
@@ -231,6 +234,10 @@
                 SortExpression="gc_page_v" />
             <asp:BoundField DataField="gc_new_users" HeaderText="GC N Usr" 
                 SortExpression="gc_new_users" />
+            <asp:BoundField DataField="ft_page_v" HeaderText="FT PG V" 
+                SortExpression="ft_page_v" />
+            <asp:BoundField DataField="ft_user" HeaderText="FT Usr" 
+                SortExpression="ft_user" />
         </Columns>
         <EditRowStyle BackColor="#999999" />
         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />

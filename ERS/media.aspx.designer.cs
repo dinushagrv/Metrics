@@ -40,15 +40,6 @@ namespace ERS {
         protected global::System.Web.UI.WebControls.TextBox txt_grv_pv;
         
         /// <summary>
-        /// txt_tw_imp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_tw_imp;
-        
-        /// <summary>
         /// txt_grv_new_usr control.
         /// </summary>
         /// <remarks>
@@ -56,6 +47,15 @@ namespace ERS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_grv_new_usr;
+        
+        /// <summary>
+        /// txt_tw_imp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_tw_imp;
         
         /// <summary>
         /// txt_fb_reach control.
@@ -112,6 +112,15 @@ namespace ERS {
         protected global::System.Web.UI.WebControls.TextBox txt_gc_pv;
         
         /// <summary>
+        /// txt_ft_pv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_ft_pv;
+        
+        /// <summary>
         /// txt_gc_n_usr control.
         /// </summary>
         /// <remarks>
@@ -119,6 +128,15 @@ namespace ERS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_gc_n_usr;
+        
+        /// <summary>
+        /// txt_ft_usr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_ft_usr;
         
         /// <summary>
         /// Button1 control.

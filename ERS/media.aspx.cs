@@ -16,7 +16,7 @@ namespace ERS
 
         protected void btn_submit_Click(object sender, EventArgs e)
         {
-            SqlDataSource1.InsertCommand = "INSERT into media(month,year,grv_page_v,grv_new_users,fb_reach,fb_vid_view,fb_new_likes, tw_impressions, yt_views,yt_subscriptions, gc_page_v,gc_new_users) values('"+dd_month.SelectedValue+"','"+dd_year.Text+"','"+txt_grv_pv.Text+"','"+txt_grv_new_usr.Text+"','"+txt_fb_reach.Text+"','"+txt_fb_vid_view.Text+"','"+grv_fb_new_l.Text+"','"+txt_tw_imp.Text+"','"+txt_yt_views.Text+"','"+txt_yt_sub.Text+"','"+txt_gc_pv.Text+"','"+txt_gc_n_usr.Text+"')";
+            SqlDataSource1.InsertCommand = "INSERT into media(month,year,grv_page_v,grv_new_users,fb_reach,fb_vid_view,fb_new_likes, tw_impressions, yt_views,yt_subscriptions, gc_page_v,gc_new_users,ft_page_v,ft_user) values('"+dd_month.SelectedValue+"','"+dd_year.Text+"','"+txt_grv_pv.Text+"','"+txt_grv_new_usr.Text+"','"+txt_fb_reach.Text+"','"+txt_fb_vid_view.Text+"','"+grv_fb_new_l.Text+"','"+txt_tw_imp.Text+"','"+txt_yt_views.Text+"','"+txt_yt_sub.Text+"','"+txt_gc_pv.Text+"','"+txt_gc_n_usr.Text+"','"+txt_ft_pv.Text+"','"+txt_ft_usr.Text+"')";
             SqlDataSource1.InsertCommandType = SqlDataSourceCommandType.Text;
 
             try
@@ -42,6 +42,8 @@ namespace ERS
             txt_yt_sub.Text = "";
             txt_yt_views.Text = "";
             grv_fb_new_l.Text = "";
+            txt_ft_pv.Text = "";
+            txt_ft_usr.Text = "";
            
         
         }
