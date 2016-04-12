@@ -5,7 +5,15 @@
     {
         height: 25px;
     }
-</style>
+        .style2
+        {
+            height: 26px;
+        }
+        .style3
+        {
+            height: 25px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h2>
@@ -179,6 +187,48 @@
             </td>
         </tr>
         <tr>
+            <td class="style3">
+                </td>
+            <td style="text-align: right" class="style3">
+                </td>
+            <td class="style3">
+                </td>
+            <td class="style3">
+                </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td style="text-align: right">
+                &nbsp;</td>
+            <td>
+                <strong>GAP</strong></td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style2">
+                </td>
+            <td style="text-align: right" class="style2">
+            </td>
+            <td class="style2">
+                Page Views</td>
+            <td class="style2">
+                <asp:TextBox ID="txt_gap_pv" runat="server" TabIndex="12"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                </td>
+            <td style="text-align: right" class="style2">
+            </td>
+            <td class="style2">
+                Users</td>
+            <td class="style2">
+                <asp:TextBox ID="txt_gap_usr" runat="server" TabIndex="13"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
             <td>
                 &nbsp;</td>
             <td style="text-align: right">
@@ -238,6 +288,10 @@
                 SortExpression="ft_page_v" />
             <asp:BoundField DataField="ft_user" HeaderText="FT Usr" 
                 SortExpression="ft_user" />
+            <asp:BoundField DataField="gap_pv" HeaderText="GAP PV" 
+                SortExpression="gap_pv" />
+            <asp:BoundField DataField="gap_usr" HeaderText="GAP Usr" 
+                SortExpression="gap_usr" />
         </Columns>
         <EditRowStyle BackColor="#999999" />
         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />

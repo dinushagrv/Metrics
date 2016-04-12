@@ -139,6 +139,24 @@ namespace ERS {
         protected global::System.Web.UI.WebControls.TextBox txt_ft_usr;
         
         /// <summary>
+        /// txt_gap_pv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_gap_pv;
+        
+        /// <summary>
+        /// txt_gap_usr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_gap_usr;
+        
+        /// <summary>
         /// Button1 control.
         /// </summary>
         /// <remarks>
