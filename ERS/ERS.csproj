@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -56,8 +59,12 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="Fasttrack.aspx" />
     <Content Include="Gender.aspx" />
+    <Content Include="HelpDesk.aspx" />
     <Content Include="images\grv.png" />
+    <Content Include="images\rightnav-logo-fasttrack-noreflect.png" />
+    <Content Include="IT.aspx" />
     <Content Include="media.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -75,6 +82,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Admissions.aspx" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -120,6 +128,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Fasttrack.aspx.cs">
+      <DependentUpon>Fasttrack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fasttrack.aspx.designer.cs">
+      <DependentUpon>Fasttrack.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -129,6 +144,20 @@
     </Compile>
     <Compile Include="Gender.aspx.designer.cs">
       <DependentUpon>Gender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HelpDesk.aspx.cs">
+      <DependentUpon>HelpDesk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HelpDesk.aspx.designer.cs">
+      <DependentUpon>HelpDesk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IT.aspx.cs">
+      <DependentUpon>IT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IT.aspx.designer.cs">
+      <DependentUpon>IT.aspx</DependentUpon>
     </Compile>
     <Compile Include="media.aspx.cs">
       <DependentUpon>media.aspx</DependentUpon>
@@ -151,6 +180,13 @@
     </Compile>
     <Compile Include="Admissions.aspx.designer.cs">
       <DependentUpon>Admissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

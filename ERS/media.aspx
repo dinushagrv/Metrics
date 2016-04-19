@@ -5,15 +5,15 @@
     {
         height: 25px;
     }
-        .style2
-        {
-            height: 26px;
-        }
-        .style3
-        {
-            height: 25px;
-        }
-    </style>
+    .style2
+    {
+        height: 26px;
+    }
+    .style3
+    {
+        height: 25px;
+    }
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h2>

@@ -1,0 +1,194 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="HelpDesk.aspx.cs" Inherits="ERS.HelpDesk" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <style type="text/css">
+        .style2
+        {
+            height: 22px;
+        }
+        .style3
+        {
+            height: 21px;
+        }
+        .style4
+        {
+            width: 24px;
+        }
+        .style5
+        {
+            height: 21px;
+            width: 24px;
+        }
+        .style6
+        {
+            height: 22px;
+            width: 24px;
+        }
+        .style7
+        {
+            font-size: large;
+            color: #CC0000;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <table style="width:100%;">
+        <tr>
+            <td class="style7">
+                <strong>HelpDesk</strong></td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td class="style4">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                Year</td>
+            <td>
+                <asp:DropDownList ID="dd_year" runat="server">
+                    <asp:ListItem>2015</asp:ListItem>
+                    <asp:ListItem Selected="True">2016</asp:ListItem>
+                    <asp:ListItem>2017</asp:ListItem>
+                </asp:DropDownList>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td class="style4">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style3">
+                Month</td>
+            <td class="style3">
+                <asp:DropDownList ID="dd_month" runat="server">
+                    <asp:ListItem>January</asp:ListItem>
+                    <asp:ListItem>February</asp:ListItem>
+                    <asp:ListItem>March</asp:ListItem>
+                    <asp:ListItem>April</asp:ListItem>
+                    <asp:ListItem>May</asp:ListItem>
+                    <asp:ListItem>June</asp:ListItem>
+                    <asp:ListItem>July</asp:ListItem>
+                    <asp:ListItem>August</asp:ListItem>
+                    <asp:ListItem>September</asp:ListItem>
+                    <asp:ListItem>October</asp:ListItem>
+                    <asp:ListItem>November</asp:ListItem>
+                    <asp:ListItem>December</asp:ListItem>
+                </asp:DropDownList>
+            </td>
+            <td class="style3">
+            </td>
+            <td class="style5">
+            </td>
+        </tr>
+        <tr>
+            <td class="style3">
+                &nbsp;</td>
+            <td class="style3">
+                &nbsp;</td>
+            <td class="style3">
+                &nbsp;</td>
+            <td class="style5">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                Open Tickets
+            </td>
+            <td>
+                <asp:TextBox ID="txt_hd_open_tix" runat="server"></asp:TextBox>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td class="style4">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style2">
+                Tickets Created
+            </td>
+            <td class="style2">
+                <asp:TextBox ID="txt_tix_created" runat="server"></asp:TextBox>
+            </td>
+            <td class="style2">
+            </td>
+            <td class="style6">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Avg Reponsce Time</td>
+            <td>
+                <asp:TextBox ID="txt_hd_avg_r_days" runat="server"></asp:TextBox>
+                Days
+                <asp:TextBox ID="txt_hd_art_hours" runat="server"></asp:TextBox>
+&nbsp;Hours</td>
+            <td>
+                &nbsp;</td>
+            <td class="style4">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td class="style4">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                <asp:Button ID="btn_clear" runat="server" Text="Clear" 
+                    onclick="btn_clear_Click" />
+                <asp:Button ID="Btn_Submit" runat="server" onclick="Btn_Submit_Click" 
+                    Text="Submit" />
+            </td>
+            <td>
+                &nbsp;</td>
+            <td class="style4">
+                &nbsp;</td>
+        </tr>
+    </table>
+    <br />
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+        CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" 
+        GridLines="None" Width="936px" AutoGenerateDeleteButton="True" 
+    style="text-align: center" DataKeyNames="id" 
+        onrowdatabound="GridView1_RowDataBound">
+        <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+        <Columns>
+            <asp:BoundField DataField="id" HeaderText="id" SortExpression="id" 
+                Visible="False" />
+            <asp:BoundField DataField="year" HeaderText="Year" SortExpression="year" />
+            <asp:BoundField DataField="month" HeaderText="Month" SortExpression="month" />
+            <asp:BoundField DataField="hd_open_tix" HeaderText="Open Tickets" 
+                SortExpression="hd_open_tix" />
+            <asp:BoundField DataField="hd_tix_created" HeaderText="Tix Created" 
+                SortExpression="hd_tix_created" />
+            <asp:BoundField DataField="hd_res_t_days" HeaderText="Avg. Response T Days" 
+                SortExpression="hd_res_t_days" />
+            <asp:BoundField DataField="hd_res_t_hours" HeaderText="Avg. Response T Hr" 
+                SortExpression="hd_res_t_hours" />
+        </Columns>
+        <EditRowStyle BackColor="#999999" />
+        <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+        <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+        <SortedAscendingCellStyle BackColor="#E9E7E2" />
+        <SortedAscendingHeaderStyle BackColor="#506C8C" />
+        <SortedDescendingCellStyle BackColor="#FFFDF8" />
+        <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+    </asp:GridView>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+        ConnectionString="<%$ ConnectionStrings:MetricsConnectionString %>" 
+        SelectCommand="SELECT [id], [year], [month], [hd_open_tix], [hd_tix_created], [hd_res_t_days], [hd_res_t_hours] FROM [IT_helpdesk]"
+        DeleteCommand="DELETE from [IT_helpdesk] where id=@id"
+>
+    </asp:SqlDataSource>
+</asp:Content>

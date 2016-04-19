@@ -33,6 +33,11 @@
                         <asp:MenuItem Text="Media" Value="Media" NavigateUrl="~/media.aspx"/>
                         <asp:MenuItem NavigateUrl="~/Gender.aspx" Text="Gender" 
                             Value="Gender"></asp:MenuItem>
+                        <asp:MenuItem Text="IT" Value="IT">
+                            <asp:MenuItem NavigateUrl="~/HelpDesk.aspx" Text="Help Desk" Value="Help Desk">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="FastTrack" Value="Fasttrack" NavigateUrl="~/fasttrack.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>
